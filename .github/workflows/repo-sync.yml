@@ -2,8 +2,7 @@
 name: sync-sazs34-scripts
 on:
   schedule:
-  # 先注释掉cron,需要的自己调整
-    - cron: '5 0 0 1 1 ? *'
+    - cron: '5 0,7,15 * * *'
   workflow_dispatch:
   watch:
     types: started
